@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!--  <link th:href="@{style.css}" rel="stylesheet">
+<script type="text/javascript" th:src="@{script.js}"></script>--->
+
+</head>
+<body>
+<table>
+	<tr th:each="employee : ${data}">
+		<td ><span th:text=${employee.eid}>Eid</span>	
+		</td>
+		<td ><span th:text=${employee.name}>name	</span>
+		</td>
+		
+	</tr>
+</table>
+
+</body>
+</html>
